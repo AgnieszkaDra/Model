@@ -1,0 +1,33 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body {
+    color: $color-font;
+    font-size: $base-fs;
+    background-color: $color-page;
+}
+
+a {
+    @include link;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.mr-2 {
+    margin-right: .5rem !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.ml-auto {
+   margin-left: auto;
+}
+
+// $h4-fs: calc(#{$base-fs}) * $golden-ratio;
+// $h3-fs: calc(#{$h4-fs}) * $golden-ratio;
+// $h2-fs: calc(#{$h3-fs}) * $golden-ratio;
+// $h1-fs: calc(#{$h2-fs}) * $golden-ratio;

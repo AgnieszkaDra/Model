@@ -1,0 +1,33 @@
+body {
+  color: aliceblue;
+  font-size: calc(1vw + 0.6em);
+  background-color: black;
+}
+
+a a {
+  color: #1476b8;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a a:hover {
+  color: lightblue;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.mr-2 {
+  margin-right: .5rem !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+/*# sourceMappingURL=base.css.map */

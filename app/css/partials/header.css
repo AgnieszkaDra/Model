@@ -1,54 +1,3 @@
-:root {
-  box-sizing: border-box;
-  font-size: calc(1vw + 0.6em); }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0; }
-
-body {
-  color: aliceblue;
-  font-size: calc(1vw + 0.6em);
-  background-color: black; }
-
-a a {
-  color: #1476b8;
-  font-weight: bold;
-  text-decoration: none;
-  background-color: transparent; }
-  a a:hover {
-    color: lightblue; }
-
-.p-0 {
-  padding: 0 !important; }
-
-.mr-2 {
-  margin-right: .5rem !important; }
-
-.border-0 {
-  border: 0 !important; }
-
-.ml-auto {
-  margin-left: auto; }
-
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr 1fr; }
-
-header {
-  grid-row: 1/2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: aqua; }
-
 header {
   position: fixed;
   top: 0;
@@ -224,4 +173,4 @@ button {
     padding-right: .5rem;
     padding-left: .5rem; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,17 @@
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin link {
+    a {
+        color: #1476b8;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: transparent;
+    &:hover {
+        color: lightblue;
+        }
+    }
+}

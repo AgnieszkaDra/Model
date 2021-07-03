@@ -1,0 +1,17 @@
+$color-page: black;
+$color-font: aliceblue;
+$color-contrast: rgb(222,105,22);
+
+$golden-ratio: 1.618;
+$base-fs: calc(1vw + 0.6em); 
+$h4-fs: $base-fs;
+$h3-fs: calc(#{$h4-fs} * 1.618);
+$h2-fs: calc(#{$h3-fs} * 1.618);
+$h1-fs: calc(#{$h2-fs} * 1.618);
+
+//breakpoints 
+$sm:  576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

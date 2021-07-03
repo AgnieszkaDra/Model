@@ -1,0 +1,238 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px 15px;
+        z-index: 1030;
+        margin-bottom: 0;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;    
+}
+
+.sticky {
+    background-color: #323232;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding: 10px 15px;
+}
+
+header, .header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(min-width: $lg){
+    header{
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+}
+
+.header__container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: $sm){
+    .header__container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: $md){
+    .header__container {
+       max-width: 720px;
+    }
+}
+
+@media(max-width: $lg) {
+    .header__container{
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #6c757d;
+   }
+}
+
+@media(min-width: $lg){
+    .header__container {
+        flex-wrap: nowrap;
+        max-width: 960px;
+        background-color: pink;
+    }
+}
+
+
+.header__logo {
+    @include flex();
+    font-size: $h4-fs;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    line-height: inherit;
+    color: $color-font;
+}
+
+.header__hamburger {
+    position: relative;
+    height: calc(#{$base-fs} * 2);
+    width:  calc(#{$base-fs} * 2);
+    display: block;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent; ///
+    border-radius: .25rem;
+}
+
+button {
+    text-transform: none;
+    overflow: visible;
+    // z-index: 50;
+}
+
+@media (min-width: $lg){
+    .header__hamburger {
+        display: block;
+     }
+}
+
+
+
+
+
+.header__hamburger-lines {
+    width: 24px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+}
+
+.header__hamburger-lines .line {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: red;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.header__hamburger-lines span:nth-child(1) {
+    top: 0;
+}
+
+.header__hamburger-lines span:nth-child(2) {
+    top: 7px;
+}
+
+.header__hamburger-lines span:nth-child(3) {
+    top: 14px;
+}
+
+
+
+
+
+.header__dropdown {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+@media (max-width: $lg){
+     .header__dropdown {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        overflow-y: auto;
+        visibility: visible;
+        background-color: #6c757d;
+        transition-timing-function: ease-in-out;
+        transition-duration: .3s;
+        transition-property: left, visibility;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+.is-open {
+    
+    visibility: visible;
+}
+
+@media(min-width: $lg) {
+    .header__dropdown {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+.dropdown__menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+@media(min-width: $lg){
+    .dropdown__menu {
+        flex-direction: row;
+    }
+}
+
+.dropdown__menu  li {
+    line-height: 1.6;
+}
+
+.dropdown__menu  li a {
+    color: #fff;
+    margin-left: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (min-width: $lg){
+.dropdown__menu  li a {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    }
+}
+
+
+
+
+

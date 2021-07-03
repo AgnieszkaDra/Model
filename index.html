@@ -8,37 +8,37 @@
     <link rel="stylesheet" href="app/css/index.css">
 </head>
 <body>
-    <header>
-        <div class="header__logo">FASHION</div>
-        <nav class="header__nav nav" id="main-menu">
-                <div class="header__hamburger" id="toggle-menu">
-                        <i class="header__hamburger-lines" id="hamburger">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </i>
-                </div> 
-                <div class="header__dropdown dropdown">
-                        <ul class="dropdown__menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Custom</a></li>
-                            <li><a href="#">Catalogue</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-        </nav>
-        <div class="absolute-dots"></div>
-        <div class="absolute-rectangle"></div>
+    <header class="header header-expand-lg sticky">
+        <div class="header__container ">
+            <a href="index.html" class="header__logo">FASHION</a>
+            <button class="header__hamburger p-0 mr-2 border-0" id="toggle-menu">
+                <i class="header__hamburger-lines" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </i>
+            </button> 
+            <div class="header__dropdown dropdown">
+                <ul class="dropdown__menu ml-auto ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Custom</a></li>
+                    <li><a href="#">Catalogue</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+            
+            <div class="absolute-dots"></div>
+            <div class="absolute-rectangle"></div>
+        </div>
     </header>
     <main>
         <section>
             <h1>Custom Your Own Clothes</h1>
             <h3>Try it, Wear it, Love it</h3>
             <div class="section__form form">
-                <nav class="form__nav">
+                <nav class="form__nav nav">
                     <div class="form__label">Dress</div>
                     <div class="form__dropdown">
                         <ul class="form__dropdown__menu">
@@ -62,7 +62,7 @@
         <div class="socialmedia"></div>
     </footer>
 
-   
+    
     
 </body>
 </html>
